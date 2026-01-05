@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>壹、動機與目的｜追魂者</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Microsoft JhengHei", sans-serif;
+            background: radial-gradient(circle at top, #1b2a4a, #020617);
+            color: #e8f2ff;
+        }
+
+        /* ===== Hero ===== */
+        .hero {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .85)), url("img/cover-image.png") center/cover no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 6vw, 4.5rem);
+            font-weight: 800;
+            letter-spacing: 6px;
+        }
+
+        .hero p {
+            margin-top: 20px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* ===== Section ===== */
+        section {
+            padding: 80px 0;
+        }
+
+        .glass-box {
+            background: rgba(255, 255, 255, .08);
+            border-radius: 24px;
+            padding: 60px 40px;
+        }
+
+        /* ===== 小標 ===== */
+        .block-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            border-left: 4px solid #6ecbff;
+            padding-left: 14px;
+        }
+
+        .block-text {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            margin-bottom: 40px;
+        }
+
+        /* ===== 目標卡 ===== */
+        .goal-card {
+            background: #fff;
+            color: #000;
+            border-radius: 18px;
+            padding: 26px;
+            height: 100%;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, .3);
+            transition: .35s;
+        }
+
+        .goal-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .goal-card h5 {
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        /* ===== 返回 ===== */
+        .back-btn {
+            margin-top: 60px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+    <div>
+        <h1>壹、動機與目的</h1>
+        <p>
+            Unity 2D 恐怖闖關遊戲《追魂者》<br>
+            探索、恐懼與生存的結合
+        </p>
+    </div>
+</section>
+
+<!-- ===== 內容 ===== -->
+<section>
+    <div class="container">
+        <div class="glass-box">
+
+            <!-- 發想背景 -->
+            <div class="block-title">📌 專題發想背景</div>
+            <div class="block-text">
+                遊戲是現代人不可或缺的娛樂方式之一，隨著電腦效能與遊戲引擎技術的成熟，<br>
+                獨立遊戲開發者也能創造出具有完整世界觀與沉浸感的作品。<br>
+                我們觀察到恐怖類型遊戲特別能引發玩家情緒共鳴，<br>
+                因此選擇以「恐懼」與「探索」作為核心主題。
+            </div>
+
+            <!-- 動機 -->
+            <div class="block-title">🔥 製作動機</div>
+            <div class="block-text">
+                市面上的恐怖遊戲多半著重於畫面驚嚇，卻較少結合解謎與策略元素。<br>
+                本專題希望透過 Unity 2D 平台，<br>
+                設計一款兼具壓迫感、探索性與遊戲性的作品，<br>
+                讓玩家在恐怖氛圍中仍需思考與判斷，提升整體遊玩深度。
+            </div>
+
+            <!-- 目的 -->
+            <div class="block-title">🎯 專題目標</div>
+
+            <div class="row g-4 mt-3">
+                <div class="col-md-4">
+                    <div class="goal-card">
+                        <h5>沉浸式恐怖體驗</h5>
+                        <p>
+                            透過音效、燈光與場景設計，<br>
+                            營造持續緊張的遊戲氛圍。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="goal-card">
+                        <h5>探索與解謎結合</h5>
+                        <p>
+                            引導玩家在地圖中探索線索，<br>
+                            並透過解謎推進劇情與關卡。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="goal-card">
+                        <h5>Unity 實作能力提升</h5>
+                        <p>
+                            實際運用 Unity 進行角色控制、<br>
+                            AI 行為與關卡設計。
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="back-btn">
+                <a href="index.html" class="btn btn-outline-light px-4">← 回首頁</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
