@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>伍、結論｜追魂者</title>
+    <title>參、系統功能｜創世真理 虛擬導覽</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -21,7 +21,7 @@
             justify-content: center;
             text-align: center;
             padding: 60px 20px;
-            background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .85)), url("img/cover-image.png") center/cover no-repeat;
+            background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .85)), url("img/cover-image3.png") center/cover no-repeat;
             background-size: cover;
             background-position: center;
         }
@@ -64,20 +64,42 @@
             margin-bottom: 40px;
         }
 
-        /* ===== 結論圖片區域 ===== */
-        .conclusion-images {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-top: 40px;
+        /* ===== 系統功能圖 ===== */
+        .system-diagram {
+            margin-top: 30px;
+            text-align: center;
         }
 
-        .conclusion-images img {
-            width: 48%;
+        .system-diagram img {
+            width: 70%;
+            border: 2px solid #4e92b7;
             border-radius: 12px;
-            border: 3px solid #4e92b7;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .system-description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-top: 20px;
+        }
+
+        /* ===== 目標卡 ===== */
+        .goal-card {
+            background: #fff;
+            color: #000;
+            border-radius: 18px;
+            padding: 26px;
+            height: 100%;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, .3);
+            transition: .35s;
+        }
+
+        .goal-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .goal-card h5 {
+            font-weight: 700;
+            margin-bottom: 10px;
         }
 
         /* ===== 返回 ===== */
@@ -93,8 +115,8 @@
 <!-- ===== Hero ===== -->
 <section class="hero">
     <div>
-        <h1>伍、結論</h1>
-        <p>專題成果總結與未來展望</p>
+        <h1>參、系統功能</h1>
+        <p>系統架構與功能詳解</p>
     </div>
 </section>
 
@@ -103,14 +125,34 @@
     <div class="container">
         <div class="glass-box">
 
-            <!-- 結論標題 -->
-            <div class="block-title">📌 結論與未來展望</div>
+            <!-- 系統架構與功能 -->
+            <div class="block-title">📌 系統架構與功能</div>
             <div class="block-text">
-                本專題透過 Minecraft 完成了真理大學的虛擬校園建構，並結合 Unity 進行遊戲場景的設計，<br>
-                同時運用 VR 技術實現了沉浸式的遊戲體驗，讓使用者可以在真理大學的虛擬世界中進行探索與解謎。<br>
-                未來，我們將繼續優化遊戲內容，增加更多互動功能，提升遊戲的趣味性與挑戰性，<br>
-                並計畫擴展至更多虛擬場景與歷史古蹟的探索。
+                本專題設計了一個以 Unity 和 VR 技術為基礎的探索遊戲系統<br>
+                包含主要界面、遊戲功能設置、主程式控制邏輯、導航等多項模組<br>
+                讓玩家能夠在虛擬校園中自由探索、解謎，並體驗沉浸式的遊戲樂趣。
+
             </div>
+
+            <!-- 系統功能流程圖 -->
+            <div class="system-diagram">
+                <h4>🖥 系統架構與功能圖</h4>
+                <img src="img/system1.png" alt="系統功能流程圖">
+            </div>
+
+            <!-- 系統功能說明 -->
+            <div class="system-description">
+                <p>主要功能：</p>
+                <ul>
+                    <li>主畫面：玩家進入遊戲後，首先會進入主畫面，可以選擇開始、說明、退出等選項。</li>
+                    <li>開始：點擊「開始」後，進入遊戲探索模式。</li>
+                    <li>說明：提供遊戲操作指引與背景故事。</li>
+                    <li>關閉主程式：結束遊戲並關閉應用程式。</li>
+                    <li>導航：幫助玩家在虛擬校園中找到關鍵位置或任務目標。</li>
+                    <li>返回標題：允許玩家返回主畫面重新開始。</li>
+                </ul>
+            </div>
+
             <div class="back-btn">
                 <a href="index.html" class="btn btn-outline-light px-4">← 回首頁</a>
             </div>
